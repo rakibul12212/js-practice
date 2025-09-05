@@ -1,7 +1,4 @@
-var input = require("fs").readFileSync("/dev/stdin", "utf8");
-var lines = input.split("\n");
-
-let salary = parseFloat(lines[0]);
+let salary = parseFloat(lines[0]).split(" ").map(Number);; 
 let percentage;
 
 if (salary >= 0 && salary <= 400.0) {
@@ -20,5 +17,5 @@ let incrementAmount = (salary * percentage) / 100;
 let newSalary = salary + incrementAmount;
 
 console.log(`Novo salario: ${newSalary.toFixed(2)}`);
-console.log(`Reajuste ganho: ${incrementAmount.toFixed(2)}`);
+console.log(`Reajuste ganho: ${earned.toFixed(2)}`);
 console.log(`Em percentual: ${percentage} %`);
