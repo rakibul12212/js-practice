@@ -10,3 +10,7 @@ let product2 = [code2, units2, price2];
 let total = (product1[1] * product1[2] + product2[1] * product2[2]).toFixed(2);
 
 console.log("VALOR A PAGAR: R$ " + total);
+
+
+
+
